@@ -3,10 +3,11 @@
 
 # In[3]:
 
-
+import os
+os.system('pip install yfinance')
+import yfinance as yf
 import streamlit as st
 import pandas as pd
-import yfinance as yf
 from oandapyV20 import API
 import oandapyV20.endpoints.orders as orders
 from oandapyV20.contrib.requests import MarketOrderRequest, TakeProfitDetails, StopLossDetails
